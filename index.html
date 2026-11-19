@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>069 刘思彤</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-size: 30px;
+            font-weight: 400;
+            color: #fff;
+            list-style-type: none;
+            text-decoration: none;
+            box-sizing: border-box;
+            font-family: "微软雅黑";
+        }
+
+        body {
+            background-image: url(./xiaozhu.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        h1 strong {
+            color: #ff599e;
+            font-size: 100px;
+        }
+
+        .yijiliebiao {
+            width: 520px;
+            height: 60px;
+            margin: 54px 0 0 870px;
+        }
+
+        .yijihezi {
+            width: 520px;
+            height: 60px;
+        }
+
+        .yijiliebiao>li {
+            width: 140px;
+            height: 200px;
+            position: relative;
+        }
+
+        li {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .erjihezi {
+            position: absolute;
+            top: 68px;
+            left: 140px;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 0;
+            height: 0;
+            overflow: hidden;
+            transition: height 300ms linear, padding 300ms linear;
+        }
+
+        .erjihezi a {
+            color: black;
+            font-size: 22px;
+            line-height: 40px;
+        }
+
+        .erjiliebiao>li {
+            width: 120px;
+            height: 60px;
+        }
+
+        .yijiliebiao>li:hover .erjihezi {
+            height: 180px;
+            padding: 5px 5px;
+        }
+
+        .yijiliebiao>li>a::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 68px;
+            width: 140px;
+            height: 0px;
+            background-color: #ff599e;
+            z-index: -1;
+            transition: height 300ms linear;
+        }
+
+        .yijiliebiao>li:hover>a::after {
+            height: 60px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 align="center"><strong>小猪之家</strong></h1>
+    <div class="yijihezi">
+        <ul class="yijiliebiao">
+            <li>
+                <a href=" ">小猪简介</a>
+                <div class="erjihezi">
+                    <ul class="erjiliebiao">
+                        <li><a href="#">小猪生平</a></li>
+                        <li><a href="#">小猪特点</a></li>
+                        <li><a href="#">小猪习性</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a href="#">小猪美食</a>
+                <div class="erjihezi">
+                    <ul class="erjiliebiao">
+                        <li><a href="#">新鲜果蔬</a></li>
+                        <li><a href="#">特色小食</a></li>
+                        <li><a href="#">美味点心</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a href="#">小猪玩乐</a>
+                <div class="erjihezi">
+                    <ul class="erjiliebiao">
+                        <li><a href="#">户外游戏</a></li>
+                        <li><a href="#">绘本故事</a></li>
+                        <li><a href="#">小动物伙伴</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>
